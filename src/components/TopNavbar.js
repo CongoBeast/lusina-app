@@ -165,7 +165,7 @@
 // export default TopNavBar;
 
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, NavDropdown, Container } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Container, Button } from 'react-bootstrap';
 import { 
   Home, Briefcase, Info, Users2, 
   Book, Rss, LogOut, Stethoscope,
@@ -324,6 +324,14 @@ const TopNavbar = ({ userRole = localStorage.userType }) => {
           border-color: #819067 !important;
           transform: translateY(-2px);
         }
+
+
+        .btn-primary {
+          background-color: #2d4600ff !important;
+          border-color: #819067 !important;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 25px rgba(10, 64, 12, 0.2) !important;
+        }
         
         .navbar-brand {
           font-size: 1.8rem !important;
@@ -392,22 +400,35 @@ const TopNavbar = ({ userRole = localStorage.userType }) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link onClick={() => handleNavClick("/")} style={{ color: customStyles.cream }}>
+                <Button>
                 <Home size={18} /> Home
+                </Button>
               </Nav.Link>
               <Nav.Link onClick={() => handleNavClick("/services")} style={{ color: customStyles.cream }}>
+                <Button className='btn-primary'>
                 <Briefcase size={18} /> Our Services
+                </Button>
               </Nav.Link>
               <Nav.Link onClick={() => handleNavClick("/about")} style={{ color: customStyles.cream }}>
+                <Button>
                 <Info size={18} /> About
+                </Button>
               </Nav.Link>
               <Nav.Link onClick={() => handleNavClick("/staff")} style={{ color: customStyles.cream }}>
+                <Button>
                 <Users2 size={18} /> Our Staff
+                </Button>
               </Nav.Link>
               <Nav.Link onClick={() => handleNavClick("/courses")} style={{ color: customStyles.cream }}>
+                <Button>
                 <Book size={18} /> Our Courses
+                </Button>
               </Nav.Link>
               <Nav.Link onClick={() => handleNavClick("/blog")} style={{ color: customStyles.cream }}>
+                <Button>
                 <Rss size={18} /> Blog
+                </Button>
+                
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

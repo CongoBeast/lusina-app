@@ -194,26 +194,6 @@ const Home = () => {
         }
       `}</style>
 
-      {/* Navigation */}
-      {/* <Navbar expand="lg" style={customStyles.navbar} variant="dark" fixed="top">
-        <Container>
-          <Navbar.Brand href="#home" style={{ color: customStyles.cream }}>
-            <Globe className="me-2" size={24} />
-            EduGlobal
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="/" style={{ color: customStyles.cream }}>Home</Nav.Link>
-              <Nav.Link href="#services" style={{ color: customStyles.cream }}>Our Services</Nav.Link>
-              <Nav.Link href="#about" style={{ color: customStyles.cream }}>About</Nav.Link>
-              <Nav.Link href="/#/staff" style={{ color: customStyles.cream }}>Our Staff</Nav.Link>
-              <Nav.Link href="#contact" style={{ color: customStyles.cream }}>Contact</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
-
       {/* Hero Section */}
       <section id="home" style={customStyles.heroSection}>
         <div style={customStyles.heroOverlay}></div>

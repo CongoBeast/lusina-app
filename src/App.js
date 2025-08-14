@@ -9,9 +9,8 @@ import Staff from "./pages/staff"
 import TopNavBar from "./components/TopNavbar";
 import Blog from "./pages/blog"
 import Courses from "./pages/courses"
-
-
-
+import ChineseLearning from "./pages/chineseLearning"
+import ChengduTripPlanning from "./pages/ChengduTripPlanning"
 
 
 
@@ -39,6 +38,8 @@ function App() {
           <Route path="/staff" element={<Staff/>} />
           <Route path="/blog" element={<Blog/>} />
           <Route path="/courses" element={<Courses/>} />
+          <Route path="/chinese-learning" element={<ChineseLearning />} />
+          <Route path="/trip-planning" element={<ChengduTripPlanning />} />
 
 
 

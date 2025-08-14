@@ -419,16 +419,25 @@ const TopNavbar = ({ userRole = localStorage.userType }) => {
                 <Users2 size={18} /> Our Staff
                 </Button>
               </Nav.Link>
-              <Nav.Link onClick={() => handleNavClick("/courses")} style={{ color: customStyles.cream }}>
+              {/* <Nav.Link onClick={() => handleNavClick("/courses")} style={{ color: customStyles.cream }}>
                 <Button>
                 <Book size={18} /> Our Courses
                 </Button>
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link onClick={() => handleNavClick("/blog")} style={{ color: customStyles.cream }}>
                 <Button>
                 <Rss size={18} /> Blog
                 </Button>
-                
+              </Nav.Link>
+              <Nav.Link onClick={() => handleNavClick("/chinese-learning")} style={{ color: customStyles.cream }}>
+                <Button>
+                <Rss size={18} /> Chinese Learning
+                </Button>
+              </Nav.Link>
+              <Nav.Link onClick={() => handleNavClick("/trip-planning")} style={{ color: customStyles.cream }}>
+                <Button>
+                <Rss size={18} /> China Trip Planning
+                </Button>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

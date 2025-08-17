@@ -36,3 +36,77 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Floating Action Button Styles - Dark Green Theme */
+.floating-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #2d5016, #3d6b1f);
+  color: #f5f5dc;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(45, 80, 22, 0.4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  font-size: 0;
+}
+
+.floating-chat-button:hover {
+  background: linear-gradient(135deg, #1f3a0f, #2d5016);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 80, 22, 0.5);
+}
+
+.floating-chat-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 12px rgba(45, 80, 22, 0.4);
+}
+
+.floating-chat-button.chat-open {
+  background: linear-gradient(135deg, #4a7c23, #5a8c33);
+  transform: rotate(90deg);
+}
+
+.floating-chat-button.chat-open:hover {
+  background: linear-gradient(135deg, #3d6b1f, #4a7c23);
+  transform: rotate(90deg) translateY(-2px);
+}
+
+.floating-chat-button svg {
+  transition: transform 0.2s ease;
+}
+
+.floating-chat-button:hover svg {
+  transform: scale(1.1);
+}
+
+.floating-chat-button.chat-open svg {
+  transform: rotate(-90deg);
+}
+
+.floating-chat-button.chat-open:hover svg {
+  transform: rotate(-90deg) scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-chat-button {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .floating-chat-button svg {
+    width: 20px;
+    height: 20px;
+  }
+}
